@@ -1,6 +1,60 @@
-<div class="container">
-  <div class="display-4">
-    <p>{{ message() }}</p>
+<div class="color-test container py-5">
+  <h1 class="display-4 mb-5 text-charcoal">Color Scheme Test</h1>
+  <div class="row g-4 mb-5">
+    <div class="col-md-3 col-sm-6">
+      <div class="color-swatch h-100 text-center p-4 rounded-3 shadow"
+           style="background: var(--cream); border: 4px solid var(--cream);">
+        <h3>Cream</h3>
+        <code class="d-block bg-dark text-white px-2 py-1 rounded small">var(--cream)</code>
+        <small>#FAF7F0</small>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="color-swatch h-100 text-center p-4 rounded-3 shadow"
+           style="background: var(--beige); border: 4px solid var(--beige);">
+        <h3>Beige</h3>
+        <code class="d-block bg-dark text-white px-2 py-1 rounded small">var(--beige)</code>
+        <small>#D8D2C2</small>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="color-swatch h-100 text-center p-4 rounded-3 shadow bg-rust"
+           style="border: 4px solid var(--rust); color: white;">
+        <h3>Rust</h3>
+        <code class="d-block bg-charcoal px-2 py-1 rounded small">var(--rust)</code>
+        <small>#B17457</small>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="color-swatch h-100 text-center p-4 rounded-3 shadow"
+           style="background: var(--charcoal); border: 4px solid var(--charcoal); color: white;">
+        <h3>Charcoal</h3>
+        <code class="d-block bg-cream px-2 py-1 rounded small">var(--charcoal)</code>
+        <small>#4A4947</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Component Tests -->
+  <div class="row g-4">
+    <div class="col-md-4">
+      <button class="btn btn-rust btn-lg w-100 mb-3">Primary Rust Button</button>
+      <button class="btn btn-outline-rust btn-lg w-100">Outline Rust</button>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-lg h-100 p-4 text-rust">
+        <h4>Card with Rust Text</h4>
+        <p>Secondary: <span class="text-secondary">var(--beige)</span></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bg-gradient rounded-4 p-4 text-white h-100 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <i class="bi bi-check-circle-fill display-4 mb-3"></i>
+          <h3>Gradient Test</h3>
+          <small>cream → beige</small>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-

@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --cream: #FAF7F0;
+  --beige: #D8D2C2;
+  --rust: #B17457;
+  --charcoal: #4A4947;
+}
+
+$primary: var(--rust);
+$secondary: var(--beige);
+$success: #8CB369;
+$info: var(--cream);
+$warning: var(--rust);
+$danger: #D9534F;
+$light: var(--cream);
+$dark: var(--charcoal);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+$body-bg: var(--cream);
+$body-color: var(--charcoal);
+
+.text-rust { color: var(--rust) !important; }
+.bg-rust { background-color: var(--rust) !important; }
+.border-rust { border-color: var(--rust) !important; }
+
+
+.todo-app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--beige) 100%);
+}
